@@ -22,3 +22,6 @@
 [submodule "roles/ansible-scala"]
 	path = roles/ansible-scala
 	url = git@github.com:JasonGiedymin/ansible-scala.git
+[submodule "roles/ansible-java"]
+	path = roles/ansible-java
+	url = git@github.com:JasonGiedymin/ansible-java.git
