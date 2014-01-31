@@ -1,5 +1,5 @@
 ---
-
+#
 # Master Install
 #
 # Installs _the_ world
@@ -7,7 +7,7 @@
 
 - hosts: all
   sudo: True
-  roles:  
+  roles:
     - { role: ansible-docker }
     - { role: ansible-nodejs, node_version: "0.10.24" }
     - { role: ansible-java, java_version: "7" }
@@ -17,3 +17,5 @@
     - { role: ansible-marathon, marathon_version: "marathon-0.3.0" }
     - { role: ansible-chronos, chronos_version: "2.1.0" }
     - { role: ansible-mesos-docker, mesos_docker_branch: "master" }
+
+- include: integration-tests.yml

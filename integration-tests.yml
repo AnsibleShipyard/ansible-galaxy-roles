@@ -1,0 +1,15 @@
+---
+#
+# integration-tests.yml
+#
+
+- hosts: all
+  sudo: True
+  tasks:
+    # Tests
+    - name: Check mesos-master health
+      shell: curl -is http://172.16.1.10:5050/master/health | grep "200 OK"
+      register: master_health_status
+    - fail: msg="Fail If Mesos Master Health Status not 200 OK"
+      when: master_health_status.stdout != "HTTP/1.1 200 OK"
+    - debug: msg="All Tests passed!"
