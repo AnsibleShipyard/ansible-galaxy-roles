@@ -25,3 +25,6 @@
 [submodule "roles/ansible-java"]
 	path = roles/ansible-java
 	url = git@github.com:JasonGiedymin/ansible-java.git
+[submodule "roles/ansible-ruby"]
+	path = roles/ansible-ruby
+	url = https://github.com/automatelife/ansible-ruby.git

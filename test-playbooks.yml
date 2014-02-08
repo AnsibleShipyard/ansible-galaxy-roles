@@ -17,5 +17,6 @@
     - { role: ansible-marathon, marathon_version: "marathon-0.3.0", tags:['mesos-tools'] }
     - { role: ansible-chronos, chronos_version: "2.1.0", tags:['mesos-tools'] }
     - { role: ansible-mesos-docker, mesos_docker_branch: "master", tags:['mesos-tools'] }
+    - { role: ansible-ruby, ruby_version: "1.9.3-p484", tags:['runtimes'] }
 
 - include: integration-tests.yml
