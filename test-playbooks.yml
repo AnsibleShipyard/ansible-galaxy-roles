@@ -9,7 +9,7 @@
   sudo: True
   roles:
     - { role: ansible-docker, tags:['os-tools'] }
-    - { role: ansible-nodejs, node_version: "0.10.24", tags:['runtimes']}
+    - { role: ansible-nodejs, nodejs_version: "0.10.24", tags:['runtimes']}
     - { role: ansible-java, java_version: "7", tags:['runtimes']}
     - { role: ansible-scala, scala_version: "2.10.3", tags:['runtimes'] }
     - { role: ansible-sbt, sbt_version: "0.13.1", tags:['scala-tools'] }
