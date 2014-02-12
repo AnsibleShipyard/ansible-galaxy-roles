@@ -28,3 +28,6 @@
 [submodule "roles/ansible-ruby"]
 	path = roles/ansible-ruby
 	url = https://github.com/automatelife/ansible-ruby.git
+[submodule "roles/ansible-python"]
+	path = roles/ansible-python
+	url = https://github.com/automatelife/ansible-python.git
