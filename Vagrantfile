@@ -21,7 +21,7 @@ nodes = [
     # :playbook => default_playbook
   },
 
-  { :hostname => "centos6510", :mem => 512, :cpus => 2,
+  { :hostname => "centos65", :mem => 512, :cpus => 2,
     :ip => '172.16.1.11',
     :box => 'opscode-centos-6.5',
     # :inv => default_inventory,
