@@ -1,7 +1,7 @@
 #
 # Vagrantfile
 # ===========
-# - Make sure you have `vagrant` installed.
+# - Make sure you have `vagrant` >= 1.4.3 installed.
 # - Run the following two commands:
 #     - vagrant box add 'opscode-ubuntu-13.10' http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-13.10_chef-provisionerless.box
 #     - vagrant box add 'opscode-centos-6.5' http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box
