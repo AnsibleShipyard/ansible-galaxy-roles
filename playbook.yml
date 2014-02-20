@@ -10,7 +10,7 @@
   roles:
     - { role: ansible-docker, tags:['os-tools'] }
     - { role: ansible-nodejs, 
-        nodejs_version: "0.10.24",
+        nodejs_version: "0.10.25",
         nodejs_global_packages: [ 'express' ],
         tags:['runtimes', 'nodejs']}
     - { role: ansible-java, java_version: "7", tags:['runtimes']}
@@ -22,4 +22,6 @@
     - { role: ansible-mesos-docker, mesos_docker_branch: "master", tags:['mesos-tools'] }
     - { role: ansible-ruby, ruby_version: "1.9.3-p484", tags:['runtimes'] }
 
-- include: integration-tests.yml
+- include: tests/integration-tests.yml tags=mesos
+- include: roles/ansible-nodejs/tests/integration-tests.yml tags=nodejs
+

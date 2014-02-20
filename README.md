@@ -24,7 +24,12 @@ Restart from fresh again:
 ## Ansible Command
 If your interested in knowing what command would initiate an ansible provision:
 
-    ansible-playbook -i inventory.yml --private-key=~/.vagrant.d/insecure_private_key -u vagrant test-playbooks.yml
+    ansible-playbook -i inventory.yml --private-key=~/.vagrant.d/insecure_private_key -u vagrant playbook.yml
+
+## Testing
+Want to test the nodejs playbook?
+
+    ansible-playbook -i inventory.yml --private-key=~/.vagrant.d/insecure_private_key -u vagrant playbooks.yml --tags nodejs
 
 ## Having Problems?
 
