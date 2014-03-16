@@ -12,6 +12,7 @@
     - { role: ansible-nodejs, 
         nodejs_version: "0.10.25",
         nodejs_global_packages: [ 'express' ],
+        nodejs_path: '/usr/',
         tags:['runtimes', 'nodejs']}
     - { role: ansible-java, java_version: "7", tags:['runtimes']}
     - { role: ansible-scala, scala_version: "2.10.3", tags:['runtimes'] }
