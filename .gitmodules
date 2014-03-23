@@ -1,30 +1,30 @@
 [submodule "roles/ansible-chronos"]
 	path = roles/ansible-chronos
-	url = git@github.com:JasonGiedymin/ansible-chronos.git
+	url = git@github.com:AnsibleShipyard/ansible-chronos.git
 [submodule "roles/ansible-docker"]
 	path = roles/ansible-docker
-	url = git@github.com:JasonGiedymin/ansible-docker.git
+	url = git@github.com:AnsibleShipyard/ansible-docker.git
 [submodule "roles/ansible-marathon"]
 	path = roles/ansible-marathon
-	url = git@github.com:JasonGiedymin/ansible-marathon.git
+	url = git@github.com:AnsibleShipyard/ansible-marathon.git
 [submodule "roles/ansible-mesos"]
 	path = roles/ansible-mesos
-	url = git@github.com:JasonGiedymin/ansible-mesos.git
+	url = git@github.com:AnsibleShipyard/ansible-mesos.git
 [submodule "roles/ansible-mesos-docker"]
 	path = roles/ansible-mesos-docker
-	url = git@github.com:JasonGiedymin/ansible-mesos-docker.git
+	url = git@github.com:AnsibleShipyard/ansible-mesos-docker.git
 [submodule "roles/ansible-nodejs"]
 	path = roles/ansible-nodejs
-	url = git@github.com:JasonGiedymin/ansible-nodejs.git
+	url = git@github.com:AnsibleShipyard/ansible-nodejs.git
 [submodule "roles/ansible-sbt"]
 	path = roles/ansible-sbt
-	url = git@github.com:JasonGiedymin/ansible-sbt.git
+	url = git@github.com:AnsibleShipyard/ansible-sbt.git
 [submodule "roles/ansible-scala"]
 	path = roles/ansible-scala
-	url = git@github.com:JasonGiedymin/ansible-scala.git
+	url = git@github.com:AnsibleShipyard/ansible-scala.git
 [submodule "roles/ansible-java"]
 	path = roles/ansible-java
-	url = git@github.com:JasonGiedymin/ansible-java.git
+	url = git@github.com:AnsibleShipyard/ansible-java.git
 [submodule "roles/ansible-ruby"]
 	path = roles/ansible-ruby
 	url = https://github.com/automatelife/ansible-ruby.git
