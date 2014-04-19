@@ -31,3 +31,6 @@
 [submodule "roles/ansible-python"]
 	path = roles/ansible-python
 	url = https://github.com/automatelife/ansible-python.git
+[submodule "roles/ansible-nginx"]
+	path = roles/ansible-nginx
+	url = git@github.com:AnsibleShipyard/ansible-nginx.git

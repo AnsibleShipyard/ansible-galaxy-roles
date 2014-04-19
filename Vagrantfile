@@ -39,7 +39,7 @@ Vagrant.configure('2') do |config|
       vb.customize ['modifyvm', :id, '--hwvirtex', 'on']
     end
 
-    config.omnibus.chef_version = :latest
+    # config.omnibus.chef_version = :latest
     config.vm.define node[:hostname] do |instance|
       instance.vm.box = node[:box]
       instance.vm.host_name = node[:hostname]# + '.' + domain

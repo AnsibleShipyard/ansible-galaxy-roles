@@ -1,3 +1,6 @@
 [nodes]
 ubuntu1310 ansible_ssh_port=22 ansible_ssh_host=172.16.1.10
 centos65 ansible_ssh_port=22 ansible_ssh_host=172.16.1.11
+
+[ubuntu]
+ubuntu1310
