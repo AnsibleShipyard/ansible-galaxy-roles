@@ -2,6 +2,7 @@
 # Vagrantfile
 # ===========
 # - Make sure you have `vagrant` >= 1.4.3 installed.
+# - Optionally install vagrant-cachier via `vagrant plugin install vagrant-cachier`
 # - Run the following two commands:
 #     - vagrant box add 'opscode-ubuntu-13.10' http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-13.10_chef-provisionerless.box
 #     - vagrant box add 'opscode-centos-6.5' http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos-6.5_chef-provisionerless.box
@@ -30,6 +31,15 @@ nodes = [
 ]
 
 Vagrant.configure('2') do |config|
+  if Vagrant.has_plugin?("vagrant-cachier")
+    # Configure cached packages to be shared between instances of the same base box.
+    # More info on the "Usage" link above
+    config.cache.scope = :box
+    config.cache.enable :apt
+    config.cache.enable :npm
+    config.cache.enable :yum
+  end
+
   nodes.each do |node|
     config.vm.provider "virtualbox" do |vb|
       vb.customize ['modifyvm', :id, '--memory', node[:mem]]

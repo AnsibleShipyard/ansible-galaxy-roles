@@ -34,3 +34,12 @@
 [submodule "roles/ansible-nginx"]
 	path = roles/ansible-nginx
 	url = git@github.com:AnsibleShipyard/ansible-nginx.git
+[submodule "roles/ansible-ark-nodejs"]
+	path = roles/ansible-ark-nodejs
+	url = git@github.com:AnsibleShipyard/ansible-ark-nodejs.git
+[submodule "ansible-ghost"]
+	path = ansible-ghost
+	url = git@github.com:AnsibleShipyard/ansible-ghost
+[submodule "roles/ansible-ghost"]
+	path = roles/ansible-ghost
+	url = git@github.com:AnsibleShipyard/ansible-ghost
