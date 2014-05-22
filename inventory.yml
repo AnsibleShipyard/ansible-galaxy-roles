@@ -1,6 +1,11 @@
 [nodes]
-ubuntu1310 ansible_ssh_port=22 ansible_ssh_host=172.16.1.10
-centos65 ansible_ssh_port=22 ansible_ssh_host=172.16.1.11
+ubuntu1310 ansible_ssh_host=172.16.1.10
+centos65 ansible_ssh_host=172.16.1.11
+
+[nodes:vars]
+ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key
+ansible_ssh_user=vagrant
+ansible_ssh_port=22
 
 [ubuntu]
 ubuntu1310
