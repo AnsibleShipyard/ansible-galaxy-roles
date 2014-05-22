@@ -25,4 +25,4 @@
     - { role: ansible-nginx, tags:['nginx'] }
 
 - include: tests/integration-tests.yml tags=mesos
-- include: roles/ansible-nodejs/tests/integration-tests.yml tags=nodejs
+- include: roles/ansible-nodejs/tests/integration-tests.yml tags=nodejs nodejs_path=/usr/
