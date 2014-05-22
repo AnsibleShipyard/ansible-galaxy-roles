@@ -22,7 +22,7 @@ Restart from fresh again:
     vagrant destroy --force && vagrant up
 
 ## Ansible Command
-If your interested in knowing what command would initiate an ansible provision:
+If you're interested in knowing what command would initiate an ansible provision:
 
     ansible-playbook -i inventory.yml --private-key=~/.vagrant.d/insecure_private_key -u vagrant playbook.yml
 
