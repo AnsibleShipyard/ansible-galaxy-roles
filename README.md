@@ -24,16 +24,15 @@ Restart from fresh again:
 ## Ansible Command
 If you're interested in knowing what command would initiate an ansible provision:
 
-    ansible-playbook -i inventory.yml --private-key=~/.vagrant.d/insecure_private_key -u vagrant playbook.yml
+    ansible-playbook playbook.yml
 
 ## Testing
 Want to test the nodejs playbook?
 
-    ansible-playbook -i inventory.yml --private-key=~/.vagrant.d/insecure_private_key -u vagrant playbook.yml --tags nodejs
+    ansible-playbook playbook.yml --tags nodejs
 
 ## Having Problems?
 
 1. Ansible cannot ssh, as it reports security key issues.
   - Remove the entry for `172.16.1.10` in `~/.ssh/known_hosts` file
 1. Create an github issue
-
