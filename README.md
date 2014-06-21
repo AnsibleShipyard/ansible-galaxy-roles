@@ -4,6 +4,14 @@ ansible-galaxy-roles
 This repo is the main repo I use to test and upload my
 ansible roles.
 
+## Just cloned?
+
+    git submodule update --init
+
+## Need to update submodules?
+
+    git submodule foreach git pull
+
 ## Test Driving the roles
 Install Vagrant.
 
