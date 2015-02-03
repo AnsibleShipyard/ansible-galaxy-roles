@@ -1,6 +1,16 @@
 ansible-galaxy-roles
 ====================
 
+__Deprecated__
+
+We've worked hard to make each role well documented with functional tests
+with travis and Docker. Please see each repository for information.
+
+Here is a good [example](https://github.com/AnsibleShipyard/ansible-nginx).
+
+
+# Old Info
+
 This repo is the main repo I use to test and upload my
 ansible roles.
 
